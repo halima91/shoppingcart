@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- HTML CSS -->
+<link rel="stylesheet" href="style.css">
+<!--animation CSS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--Fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+ <!-- font awesome -->
+ <script src="all.js"></script>
+<title>Shopping cart</title>
+</head>
+<body>
+
+  <div class="shopping-cart">
+
+     <div class="title"> Shopping Bag 
+          <span id="totala"> 0</span>
+     </div>
+
+  <div class="item"id="item1">
+
+    <div class="buttons">
+      <span onclick="myFunction(1)" class="delete-btn" ></span>
+      <i onclick="likeFunction(1)"class="fas fa-heart like-btn"id="likebtn1"></i>
+      <!-- <span onclick="likeFunction(1)"class="like-btn"id="likebtn1"></span> -->
+    </div>
+ 
+    <div class="image">
+      <img src="sbedri.jpg" alt="" height="80px" />
+    </div>
+ 
+    <div class="description">
+      <span>Sbedri</span>
+      <span>White</span>
+      <span id='prix_unit1'>100</span>
+    </div>
+ 
+    <div class="quantity">
+      <button  onclick= "plus(1)" class="plus-btn" type="button"> <img src="plus.svg" alt=""/> </button>
+        <input type="text" id ="nbr1" value="0">
+      <button  onclick=" min(1)" class="min-btn" type="button">  <img src="min.svg" alt=""/></button>
+      
+    </div>
+ 
+    <label id="prix1"class="total-price">0</label>
+  </div>
+
+  <div class="item"id="item2">
+
+    <div class="buttons">
+      <span onclick="myFunction(2)"class="delete-btn"></span>
+     
+      <!-- <span onclick="likeFunction(2)"class="like-btn"id="likebtn3"></span> -->
+         <i onclick="likeFunction(2)"class="fas fa-heart like-btn"id="likebtn2"></i>
+    </div>
+ 
+    <div class="image">
+      <img src="sneakers.jpg" alt=""height="80px"  width="82px"/>
+    </div>
+ 
+    <div class="description">
+      <span>Sneakers</span>
+      <span>White</span>
+      <span id='prix_unit2'>200</span>
+    </div>
+ 
+    <div class="quantity">
+      <button  onclick= "plus(2)"  class="plus-btn" type="button"> <img src="plus.svg" alt=""/> </button>
+      <input type="text" id ="nbr2" name="name" value="0">
+      <button onclick="min(2)"class="min-btn" type="button"><img src="min.svg" alt=""/></button>
+    </div>
+ 
+    <div id="prix2" class="total-price">0</div>
+  </div>
+ 
+  <div class="item" id="item3">
+
+    <div class="buttons">
+      <span onclick="myFunction(3)"class="delete-btn"  ></span>
+      <!-- <span onclick="likeFunction(3)"class="like-btn"id="likebtn3"></span> -->
+      <i onclick="likeFunction(3)"class="fas fa-heart like-btn"id="likebtn3"></i>
+    </div>
+ 
+    <div class="image">
+      <img src="scarf.jpg" alt="" height="80px" width="85px"/>
+    </div>
+ 
+    <div class="description">
+      <span>Scarf</span>
+      <span>Brown</span>
+      <span id='prix_unit3'>300</span>
+      
+    </div>
+ 
+    <div class="quantity">
+      <button  onclick= "plus(3)" class="plus-btn" type="button"><img src="plus.svg" alt=""/> </button>
+      <input type="text"id ="nbr3" name="name" value="1">
+      <button onclick=" min(3)"class="min-btn" type="button"><img src="min.svg" alt=""/></button>
+    </div>
+ 
+    <div  id="prix3"class="total-price">0</div>
+
+</div>
+
+</div>
+<script src="cart.js"></script>
+</body>
+</html>
